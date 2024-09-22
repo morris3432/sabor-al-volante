@@ -1,0 +1,35 @@
+.bard{
+  background-color: #8AA1A6;
+}
+
+.underline-center {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-center::after {
+  content: '';
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.underline-center:hover::after {
+  width: 100%;
+  left: -100;
+}
+
+.img{
+  width: 623px;
+  height: 390px;
+}
+
+.left-x{
+  float: right;
+}
